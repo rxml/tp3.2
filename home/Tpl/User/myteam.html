@@ -1,0 +1,47 @@
+
+<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >Website Template</a></div>
+
+<!--==============================content================================-->
+<style>
+  #content .wrap .ul-left{width: 160px;float: left;}
+    #content .wrap .ul-left a{color: #FFF;}
+  #content .wrap .ul-right{width: 420px;float: left;margin-left:30px; }
+  #content .wrap .ul-right li{height:48px;}
+</style>
+
+<section id="content">
+    <div class="container_12">	
+      <div class="grid_8">
+        <h2><a href="__APP__/user/center">个人中心</a>>>我的参团</h2>
+        <div class="wrap block-1">
+        
+            <ul class="ul-left">
+            <li>欢迎，<strong>{$_SESSION.user.username}</strong>,<a href="__APP__/user/logout">退出</a></li>
+            <li><a href="__APP__/user/edit">修改资料</a></li>
+            <li><a href="__APP__/travels/add">写游记</a></li>
+            <li><a href="__APP__/travels/myarticle">我的游记</a></li>
+            
+            <li><a href="__APP__/user/pictrues">个人相册</a></li>
+            <li><a href="__APP__/user/myteam">我的参团</a></li>
+           
+            </ul>
+            <ul class="ul-right">
+            <li style="font-size:24px;">我的参团</li>
+            <?php $i=1; ?>
+            <foreach name="row" key="k" item="vo">
+           
+            <li><?php echo $i; ?>、{$vo.name}</li>
+            <?php $i++; ?>
+            </foreach>
+            
+            </ul>
+         
+        </div>
+      </div>
+      <div class="grid_4">
+ 
+      </div>
+      <div class="clear"></div>
+    </div>  
+</section> 
+</div>    

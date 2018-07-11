@@ -1,0 +1,55 @@
+
+<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >Website Template</a></div>
+
+<script type="text/javascript" src="__PUBLIC__js/jquery.shadow.js"></script>
+<script type="text/javascript" src="__PUBLIC__js/jquery.ifixpng.js"></script>
+
+
+<script type="text/javascript" src="__PUBLIC__js/jquery.fancyzoom.js"></script>
+
+<script type="text/javascript">
+    $(function() {
+      
+        //Set the default directory to find the images needed
+        //by the plugin (closebtn.png, blank.gif, loading images ....)
+        $.fn.fancyzoom.defaultsOptions.imgDir='__PUBLIC__images/';//very important must finishwith a /
+        
+
+        // Select all links in object with gallery ID using the defaults options
+        $('.img').fancyzoom(); 
+
+        // Select all links with tozoom class, set the open animation time to 1000
+        $('.img.tozoom').fancyzoom({Speed:1000});
+
+        // Select all links set the overlay opacity to 80%
+        $('.img').fancyzoom({overlay:0.8});
+
+        //New, you can now apply the fancy zoom effect on an image
+        //apply the fancyzoom effect on all images that have the fancyzoom class
+        $(".img img.fancyzoom").fancyzoom();
+
+    });
+</script>
+<!--==============================content================================-->
+<section id="content">
+    <div class="container_12">	
+      <div class="grid_8" style="width:877px;">
+        <h2><a href="__APP__/user/center">个人中心</a>>>我的相册</h2>
+        
+        <div class="wrap block-1">
+            <if condition="!empty($pic_list)">
+              <foreach name="pic_list" item="vo">
+               <a href="__ROOT__/{$vo.pictrues}" class="img"><img src="__ROOT__/{$vo.pictrues}" alt="" width="100" height="100"></a>
+              </foreach>
+            <else/>
+              <p>你还没有图片o(︶︿︶)o<a href="__APP__/user/addpictrues">立即上传</a></p>
+            </if>
+
+         <div style="width:250px;" >{$page}</div>
+        </div>
+      </div>
+    
+      <div class="clear"></div>
+    </div>  
+</section> 
+</div>    

@@ -1,0 +1,28 @@
+[ 2018-07-10T23:14:57+08:00 ] 120.85.77.30 /tp3.2/tp3.2/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+SQL: SHOW COLUMNS FROM `qcb_index` [ RunTime:0.000851s ]
+ERR: 1146:Table 'qdm161234405_db.qcb_index' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `qcb_index`
+
+[ 2018-07-10T23:14:57+08:00 ] 120.85.77.30 /tp3.2/tp3.2/index.php/index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000806s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000953s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `qcb_index` [ RunTime:0.000925s ]
+ERR: 1146:Table 'qdm161234405_db.qcb_index' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `qcb_index`
+
+[ 2018-07-10T23:15:06+08:00 ] 120.85.77.30 /tp3.2/tp3.2/index.php/index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000836s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000998s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+ERR: 无法加载模块:Index
+

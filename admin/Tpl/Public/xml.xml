@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menus>
+	<menu>
+		
+		<title>景区管理</title>
+		<choose>area</choose>
+		<url></url>
+		<child>
+			<menu>
+				
+				<title>景区列表</title>
+				<add>index</add>
+				<url><![CDATA[__APP__/area/index]]></url>
+			</menu>
+			<menu>
+				
+				<title>添加景区</title>
+				<add>add</add>
+				<url><![CDATA[__APP__/area/add]]></url>
+			</menu>
+			
+		</child>
+	</menu>
+
+	<menu>
+		
+		<title>抱团管理</title>
+		<choose>bteam</choose>
+		<url></url>
+		<child>
+			<menu>
+				
+				<title>抱团列表</title>
+				<add>index</add>
+				<url><![CDATA[__APP__/bteam/index]]></url>
+			</menu>
+			<menu>
+				
+				<title>添加团</title>
+				<add>add</add>
+				<url><![CDATA[__APP__/bteam/add]]></url>
+			</menu>
+			
+		</child>
+	</menu>
+	<menu>
+		
+		<title>用户管理</title>
+		<choose>user</choose>
+		<url></url>
+		<child>
+			<menu>
+				
+				<title>用户列表</title>
+				<add>index</add>
+				<url><![CDATA[__APP__/user/index]]></url>
+			</menu>
+			
+		</child>
+	</menu>
+	
+	
+
+</menus>
+
+ 

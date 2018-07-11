@@ -1,0 +1,70 @@
+
+    <div class="content-box">
+      <!-- Start Content Box -->
+      <div class="content-box-header">
+        <h3>景区列表</h3>
+   
+        <div class="clear"></div>
+      </div>
+      <!-- End .content-box-header -->
+      <div class="content-box-content">
+        <div class="tab-content default-tab" id="tab1">
+          <!-- This is the target div. id must match the href of this div's tab -->
+          
+          <table>
+            <thead>
+              <tr>
+                <th>
+                  
+                </th>
+                <th>用户名</th>
+                <th>邮箱</th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>QQ</th>
+                
+                
+                <th>联系电话</th>
+                <th>地址</th>
+               
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <td colspan="6">
+                  
+                  <div class="pagination"> 
+                  {$page}
+                  </div>
+                  <!-- End .pagination -->
+                  <div class="clear"></div>
+                </td>
+              </tr>
+            </tfoot>
+            <tbody>
+            <foreach name="user_list" item = "vo">
+              <tr>
+                <td>
+                 
+                </td>
+                <td>{$vo.username}</td>
+                <td>{$vo.email}</td>
+                <td>{$vo.name}</td>
+                <td>{$vo.sex}</td>
+                <td>{$vo.qq}</td>
+                <td>{$vo.phone}</td>
+                <td>{$vo.address}</td>
+
+               
+              </tr>
+              </foreach>
+            </tbody>
+          </table>
+        </div>
+        <!-- End #tab1 -->
+        
+      </div>
+      <!-- End .content-box-content -->
+    </div>
+
+    <div class="clear"></div>

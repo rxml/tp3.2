@@ -1,0 +1,57 @@
+
+<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >Website Template</a></div>
+
+<!--==============================content================================-->
+<style>
+  #content .wrap .ul-left{width: 160px;float: left;}
+  #content .wrap .ul-left a{color: #FFF;}
+  #content .wrap .ul-right{width: 420px;float: left;margin-left:30px; }
+
+</style>
+
+<section id="content">
+    <div class="container_12">	
+      <div class="grid_8">
+        <h2><a href="__APP__/user/center">个人中心</a>>>修改资料</h2>
+        <div class="wrap block-1">
+        
+            <ul class="ul-left">
+             <li>欢迎，<strong>{$_SESSION.user.username}</strong>,<a href="__APP__/user/logout">退出</a></li>
+             <li><a href="__APP__/user/edit">修改资料</a></li>
+             <li><a href="__APP__/travels/add">写游记</a></li>
+             <li><a href="__APP__/travels/myarticle">我的游记</a></li>
+            <li><a href="__APP__/user/pictrues">个人相册</a></li>
+            <li><a href="__APP__/user/myteam">我的参团</a></li>
+           
+            </ul>
+            <ul class="ul-right">
+            <form action="" method="post" id="user_form">
+              <label for="">用户名:</label>
+              <li><input type="text" value="<?php echo $_SESSION['user']['username']?$_SESSION['user']['username']:'' ?>" name="username"></li>
+              <label for="">邮箱:</label>
+              <li><input type="text" value="<?php echo $_SESSION['user']['email']?$_SESSION['user']['email']:'' ?>" name="email"></li>
+              <label for="">真实姓名:</label>
+              <li><input type="text" value="<?php echo $one['name']?$one['name']:'' ?>" name="name"></li>
+              <label for="">性别:</label>
+              <li><input type="radio" name="sex" value="1" id="nan" <if condition="$one['sex'] eq 1"> checked="checked" </if>>&nbsp;&nbsp;<label for="nan">男</label>&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" value="2" id="nv" <if condition="$one['sex'] eq 2"> checked="checked" </if>>&nbsp;&nbsp;<label for="nv">女</label></li>
+              <label for="">QQ:</label>
+              <li><input type="text" value="<?php echo $one['qq']?$one['qq']:'' ?>" name="qq"></li>
+              <label for="">联系电话:</label>
+              <li><input type="text" value="<?php echo $one['phone']?$one['phone']:'' ?>" name="phone"></li>
+              <label for="">地址:</label>
+              <li><textarea name="address" id="" cols="30" rows="5"><?php echo $one['address']?$one['address']:'' ?></textarea></li>
+             
+              <br/>
+              <li><a href="javascript:;" class="button" onClick="document.getElementById('user_form').submit()">提交</a></li>
+            </form>
+            </ul>
+         
+        </div>
+      </div>
+      <div class="grid_4">
+ 
+      </div>
+      <div class="clear"></div>
+    </div>  
+</section> 
+</div>    
